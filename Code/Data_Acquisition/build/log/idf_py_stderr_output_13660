@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\chinm\.espressif\python_env\idf5.1_py3.11_env\Lib\site-packages\kconfgen\__main__.py", line 16, in <module>
+    main()
+  File "C:\Users\chinm\.espressif\python_env\idf5.1_py3.11_env\Lib\site-packages\kconfgen\core.py", line 319, in main
+    config = kconfiglib.Kconfig(args.kconfig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chinm\.espressif\python_env\idf5.1_py3.11_env\Lib\site-packages\kconfiglib.py", line 947, in __init__
+    self._init(filename, warn, warn_to_stderr, encoding)
+  File "C:\Users\chinm\.espressif\python_env\idf5.1_py3.11_env\Lib\site-packages\kconfiglib.py", line 1085, in _init
+    self._parse_block(None, self.top_node, self.top_node).next = None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chinm\.espressif\python_env\idf5.1_py3.11_env\Lib\site-packages\kconfiglib.py", line 2977, in _parse_block
+    raise KconfigError(
+kconfiglib.KconfigError: C:/Users/chinm/esp/v5.1.5/esp-idf/Kconfig:261: 'D:/ESD/Semester_4/Capstone/Predictive/Pioneers[1]/Pioneers/Initial_Software/build/kconfigs_projbuild.in' not found (in 'source "$COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE"'). Check that environment variables are set correctly (e.g. $srctree, which is unset or blank). Also note that unset environment variables expand to the empty string.
+CMake Error at C:/Users/chinm/esp/v5.1.5/esp-idf/tools/cmake/kconfig.cmake:176 (message):
+  Failed to run kconfgen
+  (C:/Users/chinm/.espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;-m;kconfgen;--list-separator=semicolon;--kconfig;C:/Users/chinm/esp/v5.1.5/esp-idf/Kconfig;--sdkconfig-rename;C:/Users/chinm/esp/v5.1.5/esp-idf/sdkconfig.rename;--config;D:/ESD/Semester_4/Capstone/Predictive/Pioneers[1]/Pioneers/Initial_Software/sdkconfig;--env-file;D:/ESD/Semester_4/Capstone/Predictive/Pioneers[1]/Pioneers/Initial_Software/build/config.env).
+  Error 1
+Call Stack (most recent call first):
+  C:/Users/chinm/esp/v5.1.5/esp-idf/tools/cmake/build.cmake:619 (__kconfig_generate_config)
+  C:/Users/chinm/esp/v5.1.5/esp-idf/tools/cmake/project.cmake:604 (idf_build_process)
+  CMakeLists.txt:8 (project)
+
+

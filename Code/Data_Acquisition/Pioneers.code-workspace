@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.profiles.windows": {
+			"EspressifBatchProfile": {
+				"path": "C:\\Windows\\System32\\cmd.exe",
+				"args": [
+					"/k",
+					"C:\\Espressif\\frameworks\\esp-idf-v5.3.1\\export.bat"
+				]
+			}
+		},
+		"terminal.integrated.defaultProfile.windows": "EspressifBatchProfile",
+		"files.associations": {
+			"esp_flash.h": "c",
+			"esp_system.h": "c",
+			"esp_clk.h": "c",
+			"esp_err.h": "c",
+			"initial_software.h": "c",
+			"adc_oneshot.h": "c",
+			"adc_types.h": "c",
+			"esp_bt.h": "c",
+			"adc_functions.h": "c",
+			"esp_log.h": "c",
+			"ds18b20.h": "c",
+			"esp_timer.h": "c"
+		}
+	}
+}
